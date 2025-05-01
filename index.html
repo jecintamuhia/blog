@@ -5,25 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     
+    
     <title>Reflective blog</title>
 </head>
 <body>
     
-    <div class="bar " style="width:auto">
-    <h6>In Born a Crime, Trevor Noah masterfully weaves a tapestry of humor, heartache, and resilience, offering a glimpse into his life in South Africa during apartheid. His story reminds us that even in the face of adversity, laughter can be a powerful tool for healing and understanding</h6>
-    </div>
-    <div class="header" style="width: 30%;">
-        <img src="images/IMG-20250303-WA0004.jpg">
-    </div>
+     <nav>
+        <div class="heading">My Blog</div>
+        <span class="sideMenuButton" 
+            onclick="openNavbar()">
+            
+        </span>
+
+        <div class="navbar">
+            <ul>
+                <li id="homebar"><a href="/">Home</a></li>
+                
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="#"> Group blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
     
-    <div class="body">
+    <div class="sideNavigationBar" 
+        id="sideNavigationBar">
+        <a href="#" class="closeButton" 
+            onclick="closeNavbar()">
+            
+        </a>
+        <a href="#">Home</a>
+       
+        <a href="signup.html">Sign Up</a>
+    </div>
+
+    
+    
+   
         
-    <div class="main-div" style=" height: 60vh;">
+    <div class="main-div" style=" height: 90vh;">
         
-        
+        <div class="header" style="width: 30%;">
+            <img src="images/IMG-20250303-WA0004.jpg">
+        </div>
         <h1>MIXED ROOT</h1>
         
     </div>
+    <div class="body">
     <div class="container">
       <h2>why the Title</h2>
       More Neutral and Positive:
@@ -62,14 +90,37 @@ More Inclusive:
     <img src="images/noah-removebg-preview.png">
 </div>
     </div>
+  
     
 </div>
+<div id="articles"> 
+    <h1>Articles</h1>
+</div>
+<div class="articles">
+   
+<div>
+   <a href="https://www.linkedin.com/pulse/book-i-highly-recommend-dr-joseph-ntiamoah-kbkgc/?lipi=urn%3Ali%3Apage%3Ad_flagship3_pulse_read%3Ba6nqsrr7QuKVLLxwk7kVOg%3D%3D"><img src="https://media.licdn.com/dms/image/v2/D5612AQFO3ISlrAx-Ow/article-cover_image-shrink_423_752/article-cover_image-shrink_423_752/0/1713303252359?e=1751500800&v=beta&t=Piw_H0pDBR-xdnzclNihgRY7yIe8X7d3dCoN4OTgnRE" style="width:60%;height:40vh"></a> 
+<p>Ben curson</p>
+</div>
+<div>
+    
+    <a href="https://www.linkedin.com/pulse/top-10-novels-i-have-read-part-3-akinlabi-akingbade/?lipi=urn%3Ali%3Apage%3Ad_flagship3_pulse_read%3Ba6nqsrr7QuKVLLxwk7kVOg%3D%3D"><img src="images/Book.png" style="width:60%;"></a>
+<p> Top 10 Novels</p>
+</div>
+<div>
+    <a href="https://www.linkedin.com/pulse/my-top-10-books-2020-ajibola-ameerah/?lipi=urn%3Ali%3Apage%3Ad_flagship3_pulse_read%3B6FqsyFgIT%2BmNE6xpXflQug%3D%3D"><img src="https://media.licdn.com/dms/image/v2/C4E12AQH5bAOe8L7Yhg/article-cover_image-shrink_423_752/article-cover_image-shrink_423_752/0/1608454284041?e=1751500800&v=beta&t=JMJnW6Va_CtgBmTvnRqcgz2h0HPTebhBLcdoLgu86YM" style="width: 80%;height: 30vh;"></a>
+<p>My Top 10 Books</p>
+</div>
+</div>
+<div class=" sign-up"id="sign-up">
+    
 
+</div>
 <div class="footer">
     <a href="https://trevornoahbooks.com/">About Us</a>
     <a></a>
     
-    
+    <a href="https://nyjgrops.netlify.app/?authuser=0">home</a>
         
         <p>author:Jecinta Muhia</p>
         <p>@Blog, some rights reserved</p>
