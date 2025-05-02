@@ -14,6 +14,7 @@
 
 nav {
     width: 100%;
+    object-fit: cover;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -22,14 +23,13 @@ nav {
     
 }
 
+
 nav .heading {
     font-size: 30px;
     font-weight: 700;
     color: white;
 }
-#homebar{
- background-color: none;
-}
+
 
 nav ul {
     display: flex;
@@ -109,15 +109,59 @@ ul{
 
     nav .navbar {
         display: none;
+        
     }
 
     .sideNavigationBar {
         display: block !important;
     }
+.sideNavigationBar {
+        height: 10%;
+        position: sticky;
+        top: 0;
+        right: 0%;
+        background-color: green;
+        overflow-x: hidden;
+         
+        
+        
+        
+    } 
+    .sideNavigationBar a {
+        padding: 8px 8px 8px 40px;
+        display: block;
+        font-size: 25px;
+        /* font-weight: 500; */
+        color: #d1d1d1;
+        transition: 0.3s;
+        
+        text-decoration: none;
+    }
+    
+    .sideNavigationBar a button {
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: green;
+        font-size: 16px;
+        border-style: none;
+        font-weight: 700;
+    }
+    
+    .sideNavigationBar a:hover {
+        color: white;
+    }
+    
+    .sideNavigationBar .closeButton {
+        position: absolute;
+        /* top: 10px; */
+        right: 25px;
+        font-size: 20px;
+        margin-left: 50px;
+    } 
 }
 
 .sideNavigationBar {
-    height: 100%;
+    height: 10%;
     position: sticky;
     top: 0;
     right: 0%;
@@ -170,7 +214,7 @@ ul{
 html,
 body {
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #000000;
 }
 
@@ -423,7 +467,7 @@ body {
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width:600px) {
 
     .container::before,
     .container.sign-in::before,
@@ -436,9 +480,9 @@ body {
         right: 0;
     }
 
-    /* .container.sign-in .col.sign-up {
+    .container.sign-in .col.sign-up {
         transform: translateY(100%);
-    } */
+    }
 
     .container.sign-in .col.sign-in,
     .container.sign-up .col.sign-up {

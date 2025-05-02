@@ -33,6 +33,8 @@ body{
 }
 #articles{
     text-align: center;
+    font-size: larger;
+    color: white;
 }
 .bar{
     position: sticky;
@@ -65,7 +67,7 @@ body{
    border: solid white;
     box-shadow: 10px 10px lightslategray;
     margin-top:100px;
-    background:linear-gradient(rgba(25, 89, 105, 0.5),rgba(230, 227, 227, 0.5)); 
+    background:linear-gradient(rgba(96, 197, 92, 0.5),rgba(65, 148, 76, 0.5)); 
 }
 
 .row img{
@@ -137,9 +139,7 @@ nav .heading {
     font-weight: 700;
     color: white;
 }
-#homebar{
- background-color: none;
-}
+
 
 nav ul {
     display: flex;
@@ -198,9 +198,9 @@ li {
     justify-content: center;
     margin-left: 50%;
 }
- @media screen and (max-width: 800px) {
+ @media screen and (max-width: 400px) {
     .body, .bar, .header {
-      width: 100%;
+      /* width: 100%; */
       padding: 0;
     }
     
@@ -214,6 +214,7 @@ li {
         color:aliceblue;
         background-repeat: no-repeat;
         width:100%;
+        margin-left: -1%;
         background-size: cover;
         background-image:url('https://cdn.pixabay.com/photo/2017/10/12/17/04/tree-2845119_1280.jpg');
     }
@@ -268,15 +269,15 @@ li {
     position: sticky;
     top: 0;
     right: 0%;
-    background-color: green;
-    overflow-x: hidden;
+    background-color: rgb(81, 117, 81);
+    /* overflow-x: hidden; */
     transition: 0.3s ease-in;
-    padding-top: 60px;
+    padding-top: 0px;
     display: none;
 }
 
 .sideNavigationBar a {
-    padding: 8px 8px 8px 40px;
+    padding: 5px 5px 5px 3px;
     display: block;
     font-size: 25px;
     font-weight: 500;
@@ -286,9 +287,9 @@ li {
 }
 
 .sideNavigationBar a button {
-    padding: 10px 20px;
+    padding: 0px 0px;
     border-radius: 10px;
-    color: green;
+    color: rgb(40, 152, 167);
     font-size: 16px;
     border-style: none;
     font-weight: 700;
