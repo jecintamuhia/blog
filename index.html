@@ -20,8 +20,15 @@
         <div class="navbar">
             <ul>
                 <li ><a href="/">Home</a></li>
-                <li><a href="https://bookreviewblogs.netlify.app/"> Group blog</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
+                
+                <li onclick="myFunction()" class="dropbtn">projects</a></li>
+                <div id="myDropdown" class="dropdown-content">
+     
+    <a href="https://bookreviewblogs.netlify.app/">Reading Group Blog</a>
+    <a href="https://682ec10732a82faff15c457b--teamwebapp.netlify.app/">Spartan lab</a>
+    
+    </div>
+                <li><a href="signup.html">register</a></li>
                 
             </ul>
         </div>
@@ -73,7 +80,7 @@ More Inclusive:
         <h2>
             How the above  quote resonates gender Roles
         </h2>
-        <p>Patricia is depicted as a strong, independent woman who defies societal expectations. She actively seeks opportunities for herself and her son, even facing opposition from Abel and his family. She chooses to be in Johannesburg, a place illegal for a Black person to be, highlighting her defiance of the system. <br>
+        <p>Patricia is depicted as a strong, independent woman who defies societal expectations. She actively seeks opportunities for herself and her son, even facing opposition from Abel and his family. She chooses to be in Johannesburg, a place illegal for a Black person to be, highlighting her defiance of the system. 
             Abel, on the other hand, embodies traditional gender roles. He desires a wife who is subservient and conforms to his expectations, rather than an individual like his wife who is intellectual and independent. This is reflected in his frustration with Patricia's independence and her decision to go to church all day on Sundays. 
             Abel's desire for a traditional wife ,highlights the complex nature of patriarchal expectations, where men desire control but are also drawn to women who challenge those expectations
             The clash between Patricia's independent nature and Abel's desire for control creates significant tension in their relationship and in Trevor's life. This tension is fueled by the patriarchal values that Abel embodies and the society in which they live. 
@@ -100,7 +107,7 @@ More Inclusive:
 <div class="articles">
    
 <div>
-   <a href="https://www.linkedin.com/pulse/book-i-highly-recommend-dr-joseph-ntiamoah-kbkgc/?lipi=urn%3Ali%3Apage%3Ad_flagship3_pulse_read%3Ba6nqsrr7QuKVLLxwk7kVOg%3D%3D"><img src="https://media.licdn.com/dms/image/v2/D5612AQFO3ISlrAx-Ow/article-cover_image-shrink_423_752/article-cover_image-shrink_423_752/0/1713303252359?e=1751500800&v=beta&t=Piw_H0pDBR-xdnzclNihgRY7yIe8X7d3dCoN4OTgnRE" style="width:60%;height:40vh"></a> 
+   <a href="https://www.linkedin.com/pulse/book-i-highly-recommend-dr-joseph-ntiamoah-kbkgc/?lipi=urn%3Ali%3Apage%3Ad_flagship3_pulse_read%3Ba6nqsrr7QuKVLLxwk7kVOg%3D%3D"><img src="https://media.licdn.com/dms/image/v2/D5612AQFO3ISlrAx-Ow/article-cover_image-shrink_423_752/article-cover_image-shrink_423_752/0/1713303252359?e=1751500800&v=beta&t=Piw_H0pDBR-xdnzclNihgRY7yIe8X7d3dCoN4OTgnRE" style="width:65%;height:30vh"></a> 
 <p>Ben curson</p>
 </div>
 <div>
@@ -117,6 +124,23 @@ More Inclusive:
     
 
 </div>
+<script>
+  function myFunction(){
+    document.getElementById("mydropdown").classList.toggle("show")
+  }
+  window.onclick = function(event){
+    if(!event.target.matches('.dropbtn')){
+      var dropdowns= document.getElementsByClassName("drowndown-content");
+      var i;
+      for(i=0;i<dropdowns.length;i++){
+        var openDropdown = dropdowns[i];
+        if(openDropdown.classList.contains('show')){
+          openDropdown.classList.remove('show')
+        }
+      }
+    }
+  }
+ </script>
 <div class="footer">
    
       
